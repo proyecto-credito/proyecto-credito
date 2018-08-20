@@ -1,0 +1,45 @@
+/*
+Para sacar paleta de colores:
+ctr + shift + c
+*/
+
+#bodyInicio{
+    background-color: #DDE5E7;
+}
+#menuInicio{
+	width: auto;
+	background-color: #FFFFFF;
+	box-shadow: 2px 1px 10px 1px #61848d;
+}
+.menuA{
+	margin-left: 10px;
+}
+#login-cuerpo{
+	/*background-color: #FFFFFF;*/
+	padding: 0px;
+	border-top: 0px;
+	color: #666;
+}
+#login-monigote{
+	width: 170px;
+	height: 120px;
+	margin-bottom: -30px;
+	margin-left: 10%;
+}
+#login-titulo{
+	font-size: 12px;
+	margin-left: 19%;
+	color: #FFFFFF;
+}
+#login-boton-ingresar{
+	margin-left: 45%;
+}
+#alerta{
+	background-color: #8C3636;
+	color: #FFFFFF;
+	padding: 0px;
+	margin-bottom: 0px;
+	border: 1px solid transparent;
+	border-radius: 3px;
+	font-size: 14px;
+}
