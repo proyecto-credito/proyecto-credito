@@ -17,7 +17,7 @@
             <!-- /.box-header -->
             <div class="box-body">
               
-                <form role="form">
+                <form role="form" method="post" enctype="multipart/form-data">
                 <!-- text input -->
                 <div class="form-group">
                   <input type="text" class="form-control" placeholder="Ingresar Nombre Completo">

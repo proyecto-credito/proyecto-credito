@@ -372,8 +372,8 @@ a:focus {
     float: left;
   }
   .navbar-custom-menu .navbar-nav > li > a {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 0px;
     line-height: 20px;
   }
 }
@@ -1222,9 +1222,10 @@ a:focus {
   }
   .navbar-custom-menu > .navbar-nav > li > .dropdown-menu {
     position: absolute;
-    right: 5%;
+    right: 1%;
     left: auto;
-    border: 1px solid #ddd;
+    top: 32px;
+    border: 0px solid #ddd;
     background: #fff;
   }
 }

@@ -2,17 +2,19 @@
  <!--=====================================
   LOGOTIPO
  =====================================-->
-  <a href="inicio" class="logo" style="height: auto;">
+ 
+   <a href="inicio" class="logo">
     <!-- logo mini -->
     <span class="logo-mini">
       <img src="vistas/img/Credito-logo-mini-b.png" class="img-responsive" style="width: 38px;margin-left: 5px">
     </span>
 
     <!-- logo normal -->
-
-    <span class="logo-lg" style="height: 50px">
+  <div  align="center" style="height: 50px;">
+    <span class="logo-lg">
       <img src="vistas/img/Credito-logo-b.png" class="img-responsive" style="height: 45px">
     </span>
+  </div>
 
   </a>
 
@@ -26,7 +28,8 @@
     </a>
     <div class="row">
       <div class="col-md-9 text-center">
-        <h2 style="height: 0px;color: #ffffff;font-family: fantasy;margin-top: 5px;">Panel de Administrador</h2>
+        <h2 style="height: 0px;color: #ffffff;font-family: fantasy;margin-top: 5px;">Panel de <?php  //var_dump($_SESSION)
+        echo $_SESSION["rolUsuario"]; ?></h2>
       </div>
     
     <!-- perfil de usuario -->
@@ -48,7 +51,13 @@
           <!-- Dropdown-toggle -->
 
           <ul class="dropdown-menu">  
+            <li class="user-header">
+              
+            </li>
             <li class="user-body">
+              
+            </li>
+            <li class="user-footer">
               <div class="pull-right">
                 <a href="salir" class="btn btn-default btn-flat">Salir</a>
               </div>

@@ -1,8 +1,3 @@
-<?php
-
-session_start();
-
-?>
 <!DOCTYPE html>
 <html lang="en" style="height: 100%">
 <head>
@@ -27,8 +22,6 @@ session_start();
   <link rel="stylesheet" href="vistas/dist/css/skins/_all-skins.min.css">
   <!-- DataTables -->
   <link rel="stylesheet" href="vistas/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
-  <link rel="stylesheet" href="vistas/bower_components/datatables.net-bs/css/responsive.bootstrap.min.css">
-
 
   <!--=====================================
   =            Plugin JS           =
@@ -74,8 +67,8 @@ echo '
     /*=================================
     =            contenido            =
     =================================*/
-    
-    if(isset($_GET["ruta"])){
+    if ($_SESSION["rolUsuario"] == "Administrador") {
+      if(isset($_GET["ruta"])){
       if ($_GET["ruta"] == "inicio" ||
         $_GET["ruta"] == "usuarios" ||
         $_GET["ruta"] == "frmPrevalidador" ||
@@ -88,6 +81,19 @@ echo '
     }else{
         include "modulos/inicio.php";
       }
+    }else if($_SESSION["rolUsuario"] == "Analista"){
+      if(isset($_GET["ruta"])){
+      if ($_GET["ruta"] == "inicio" ||
+        $_GET["ruta"] == "salir"
+    ) {
+        include "modulos/".$_GET["ruta"].".php";
+      }else{
+        include "modulos/404.php";
+      }
+    }else{
+        include "modulos/inicio.php";
+      }
+    }
     
     
     /*=====  End of contenido  ======*/

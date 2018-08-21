@@ -1,4 +1,5 @@
 <?php
+session_start();
 //Controladores
 require_once "controladores/plantilla.controlador.php";
 require_once "controladores/login.controlador.php";

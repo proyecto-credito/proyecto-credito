@@ -1,4 +1,7 @@
-<aside class="main-sidebar">
+<?php 
+//Se valida el rol del usuario y se le asigna el menu correspondiente a ese rol
+if ($_SESSION["rolUsuario"] == "Administrador") {
+	echo '<aside class="main-sidebar">
 	<section class="sidebar">
 		<ul class="sidebar-menu">
 			<li class="disable"><a href="inicio">
@@ -18,4 +21,18 @@
 		</li>
 		</ul>
 	</section>
-</aside>
+</aside>';
+}else if ($_SESSION["rolUsuario"] == "Analista") {
+	echo '<aside class="main-sidebar">
+	<section class="sidebar">
+		<ul class="sidebar-menu">
+			<li class="disable"><a href="inicio">
+				<i class="fa fa-home"></i>
+				<span>Inicio</span>
+			</a>
+		</li>
+		</ul>
+	</section>
+</aside>';
+}
+?>

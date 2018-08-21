@@ -6,7 +6,7 @@
 <p id="login-titulo">INGRESAR AL SISTEMA</p>
 <form method="post">
 <div class="form-group has-feedback">
-<input type="text" class="form-control" placeholder="Usuario" name="ingUsuario" required>
+<input type="text" class="form-control" placeholder="Usuario" name="ingUsuario" id="ingUsuario" required>
 <span class="glyphicon glyphicon-user form-control-feedback"></span>
 </div>
 <div class="form-group has-feedback">
