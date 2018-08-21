@@ -1,13 +1,11 @@
 <div class="content-wrapper">
-    <div class="container" style="width: auto">
     <section class="content-header">
       <h1>
         Blank page
         <small>it all starts here</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Inicio</a></li>
-        <li class="active">Contenido</li>
+        <li class="active"><i class="fa fa-home"></i>Inicio</li>
       </ol>
     </section>
 
@@ -35,8 +33,6 @@
           Footer
         </div>
         <!-- /.box-footer-->
-      </div>
-      <!-- /.box -->
 
     </section>
     <!-- /.content -->

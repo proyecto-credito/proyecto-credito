@@ -3,7 +3,7 @@
   LOGOTIPO
  =====================================-->
  
-   <a href="inicio" class="logo">
+   <a href="contenido" class="logo">
     <!-- logo mini -->
     <span class="logo-mini">
       <img src="vistas/img/Credito-logo-mini-b.png" class="img-responsive" style="width: 38px;margin-left: 5px">

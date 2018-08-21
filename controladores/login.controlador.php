@@ -28,7 +28,7 @@ class ControladorLogin{
 						$_SESSION["rolUsuario"] = $respuesta["ROLNOMBRE"];
 						//redirecciona a la pagina de inicio
 						echo '<script>
-						window.location = "inicio";
+						window.location = "contenido";
 						</script>';
 					}else if ($respuesta["USUESTADO"] == "Inactivo") {
 						//Mensaje de error

@@ -4,7 +4,7 @@ if ($_SESSION["rolUsuario"] == "Administrador") {
 	echo '<aside class="main-sidebar">
 	<section class="sidebar">
 		<ul class="sidebar-menu">
-			<li class="disable"><a href="inicio">
+			<li class="disable"><a href="contenido">
 				<i class="fa fa-home"></i>
 				<span>Inicio</span>
 			</a>
@@ -26,7 +26,7 @@ if ($_SESSION["rolUsuario"] == "Administrador") {
 	echo '<aside class="main-sidebar">
 	<section class="sidebar">
 		<ul class="sidebar-menu">
-			<li class="disable"><a href="inicio">
+			<li class="disable"><a href="contenido">
 				<i class="fa fa-home"></i>
 				<span>Inicio</span>
 			</a>

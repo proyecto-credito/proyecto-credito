@@ -69,7 +69,7 @@ echo '
     =================================*/
     if ($_SESSION["rolUsuario"] == "Administrador") {
       if(isset($_GET["ruta"])){
-      if ($_GET["ruta"] == "inicio" ||
+      if ($_GET["ruta"] == "contenido" ||
         $_GET["ruta"] == "usuarios" ||
         $_GET["ruta"] == "frmPrevalidador" ||
         $_GET["ruta"] == "salir"

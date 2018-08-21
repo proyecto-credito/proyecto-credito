@@ -9,8 +9,13 @@
     </h1>
 
     <ol class="breadcrumb">
-      
-      <li><a href="inicio"><i class="fa fa-home"></i> Inicio</a></li>
+      <?php 
+      if (isset($_SESSION["iniciarSesion"])) {
+        echo '<li><a href="contenido"><i class="fa fa-home"></i> Inicio</a></li>';
+      }else{
+        echo '<li><a href="inicio"><i class="fa fa-home"></i> Inicio</a></li>';
+      }
+       ?>
       
       <li class="active">Página no encontrada</li>
     
@@ -36,7 +41,14 @@
 
         <p>
         
-Puedes regresar haciendo <a href="inicio">click aquí.</a>
+Puedes regresar haciendo 
+<?php 
+      if (isset($_SESSION["iniciarSesion"])) {
+        echo '<a href="contenido">click aquí.</a>';
+      }else{
+        echo '<a href="inicio">click aquí.</a>';
+      }
+       ?>
         
         </p>
 
