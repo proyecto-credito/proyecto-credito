@@ -1,0 +1,55 @@
+/*
+Para sacar paleta de colores:
+ctr + shift + c
+*/
+
+#menuISidebarUl{
+	/*background-color: rgba(40, 84, 123, 0.18);*/
+	background-color: rgba(11, 73, 127, 0.93);
+	margin-left: 10px;
+}
+#menuIA{
+	color:  rgba(230, 230, 230, 1);
+}
+#menuIA:hover,
+#menuIA:active,
+#menuIA:focus {
+  outline: none;
+  text-decoration: none;
+  color: #000;
+}
+#menuISidebarLi:hover,
+#menuISidebarLi:active,
+#menuISidebarLi:focus {
+  outline: none;
+  text-decoration: none;
+  background-color: rgba(117, 178, 240, 1);
+}
+/*DISEÑO DE LOGIN */
+#menuILogin, .sidebar-mini.sidebar-collapse .main-sidebar{
+  width: 90%;
+  height: 20px;
+}
+#menuILP{
+  color:  rgba(230, 230, 230, 1);
+  margin-top: 8px;
+  font-size: 16px;
+}
+#menuILB{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  /*font-size: 16px;*/
+}
+#menuILI{
+  margin-bottom: 5px;
+  /*font-size: 16px;*/
+}
+#alerta{
+  background-color: #8C3636;
+  color: #FFFFFF;
+  padding: 0px;
+  margin-bottom: 0px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  font-size: 14px;
+}

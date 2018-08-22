@@ -20,19 +20,42 @@ ctr + shift + c
 	border-top: 0px;
 	color: #666;
 }
+/* Login monigote o imagen normal*/
 #login-monigote{
 	width: 170px;
 	height: 120px;
 	margin-bottom: -30px;
 	margin-left: 10%;
 }
+/* Login monigote o imagen modal*/
+#login-monigoteM{
+	width: 200px;
+	margin-left: 0px;
+}
+/*Titulo normal */
 #login-titulo{
 	font-size: 12px;
 	margin-left: 19%;
 	color: #FFFFFF;
 }
+/*Titulo modal */
+#login-tituloM{
+	font-size: 18px;
+	margin-top: -48px;
+	color: #FFFFFF;
+}
+/*boton ingresar normal*/
 #login-boton-ingresar{
 	margin-left: 45%;
+}
+/*boton ingresar modal*/
+#login-boton-ingresarM{
+	margin-left: 0%;
+	/*background-color: transparent;*/
+}
+/*footer modal */
+#login-footerM{
+	background-color: #3c8dbc;
 }
 #alerta{
 	background-color: #8C3636;

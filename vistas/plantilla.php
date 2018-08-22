@@ -22,14 +22,14 @@
   <link rel="stylesheet" href="vistas/dist/css/skins/_all-skins.min.css">
   <!-- DataTables -->
   <link rel="stylesheet" href="vistas/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
-
+  <!-- Diseño login -->
+  <link rel="stylesheet" href="vistas/dist/css/login.css"/>
+  <!-- Diseño menu -->
+  <link rel="stylesheet" href="vistas/dist/css/menu.css"/>
   <!--=====================================
   =            Plugin JS           =
   ======================================-->
 
-
-<!-- diseño login -->
-<link rel="stylesheet" href="vistas/dist/css/login.css"/>
 <!-- jQuery 3 -->
 <script src="vistas/bower_components/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
@@ -109,18 +109,18 @@ echo '
     /*================================
     =            CABECERA            =
     ================================*/
-    
+    //style="background-color: rgba(45, 59, 88, 1);"
     echo '
-<body  class="hold-transition" id="bodyInicio">
+<body  class="hold-transition sidebar-mini" id="bodyInicio">
     <div class="wrapper">
-    <header class="main-header">
+    <header class="main-header" >
     <nav class="navbar navbar-static-top">
       
-        <a href="#" class="sidebar-toggle "              data-toggle="push-menu" role="button">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+        <a href="#" class="sidebar-toggle " data-toggle="push-menu" role="button">
+        <span class="sr-only" style="background-color: #fff">Toggle navigation</span>
+        <span class="icon-bar" ></span>
+        <span class="icon-bar" ></span>
+        <span class="icon-bar" ></span>
         </a>
       
       <div style="margin-left: 35%">
@@ -138,10 +138,11 @@ echo '
     
     echo '
     <div class="row">
-      <aside class="main-sidebar">
+      <aside class="main-sidebar" style="top: 50px;padding-top: 10px;">
         <section class="sidebar">
         ';
-        include "vistas/modulos/login.php";
+        include "vistas/modulos/menu.php";
+        //include "vistas/modulos/login.php";
     echo'
       </section>
       </aside>';
@@ -166,6 +167,15 @@ echo '<div class="col-md-11">';
     }else{
         include "modulos/inicio.php";
       }
+      /*======================================
+      =            MODAL DE LOGIN            =
+      ======================================*/
+      
+      include "vistas/modulos/login.modal.php";
+      
+      /*=====  End of MODAL DE LOGIN  ======*/
+      
+        
     /*=====  End of contenido  ======*/
     
   /*==============================

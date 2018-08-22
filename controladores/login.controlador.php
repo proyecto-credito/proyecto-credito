@@ -32,7 +32,11 @@ class ControladorLogin{
 						</script>';
 					}else if ($respuesta["USUESTADO"] == "Inactivo") {
 						//Mensaje de error
-						echo '<br><div id="alerta" align="center">Error al ingresar, usted no se encuentra activo en nuestro sistema, para mas información debe acercarse a la oficina más cercana.</div>';
+						echo '<br><div class="alert alert-danger alert-dismissible" align="center">
+						<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+						<h4><i class="icon fa fa-ban"></i> Error!</h4>
+						Al ingresar, usted no se <br>encuentra activo en nuestro <br> sistema. Para más información <br> debe acercarse a la oficina más <br> cercana.</div>
+						';
 					}
 				}else{
 					//Se deja el valor del campo de texto usuario enviado por el formulario.
@@ -43,11 +47,19 @@ class ControladorLogin{
             			});
 					</script>';
 					//Se muestra un mensaje de error
-					echo '<br><div id="alerta" align="center">Error al ingresar la contraseña vuelva a intentarlo</div>';
+					echo '<br><div class="alert alert-danger alert-dismissible" align="center">
+						<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+						<h4><i class="icon fa fa-ban"></i> Error!</h4>
+						Al ingresar la contraseña <br>vuelva a intentarlo.</div>
+						';
 				}
 			}else if ($respuesta["USUNOMBRE"] != $_POST["ingUsuario"] && $respuesta["USUCONTRASENA"] != $_POST["ingPassword"]) {
 				//mensaje de error
-				echo '<br><div id="alerta" align="center">Error al ingresar el usuario y la contraseña vuelva a intentarlo</div>';
+				echo '<br><div class="alert alert-danger alert-dismissible" align="center">
+						<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+						<h4><i class="icon fa fa-ban"></i> Error!</h4>
+						Al ingresar el usuario y la <br> contraseña vuelva a intentarlo.</div>
+						';
 			}
 		}
 	}

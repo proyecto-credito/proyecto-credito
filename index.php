@@ -4,6 +4,7 @@ session_start();
 require_once "controladores/plantilla.controlador.php";
 require_once "controladores/login.controlador.php";
 require_once "controladores/usuarios.controlador.php";
+require_once "controladores/encriptacion.controlador.php";
 
 //Modelos
 
